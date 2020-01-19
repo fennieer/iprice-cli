@@ -13,11 +13,29 @@ Clone [here](https://github.com/fennieer/iprice-cli.git) to get all files.
 git clone https://github.com/fennieer/iprice-cli.git
 ```
 
+## Installation
+
+Please make sure your node is up-to-date. 
+You will need to install [commander](https://github.com/tj/commander.js/#installation) for the CLI to work.
+
+```bash
+npm install commander
+```
+
 ### Commands:
+
+In file
 ```terminal
-  iprice-pfer uppercase|up <string>   Change string to uppercase
-  iprice-pfer alternate|alt <string>  Converts string to alternate upper and lower case
-  iprice-pfer create-csv|c <string>   Create CSV file from string
+  node src/commands.js uppercase|up <string>   Change string to uppercase
+  node src/commands.js alternative|alt<string>  Converts string to alternate upper and lower case
+  node src/commands.js createCSV|c<string>   Create CSV file from string
+```
+
+Global
+```terminal
+  iprice-pfer up <string>   Change string to uppercase
+  iprice-pfer alt <string>  Converts string to alternate upper and lower case
+  iprice-pfer c <string>   Create CSV file from string
 ```
 
 !!NOTE: If you have a space in the input value, please single/double quote the input value.

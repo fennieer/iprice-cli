@@ -9,7 +9,6 @@
   "license": "Pei Fen Er",
   "description": "A CLI tool to transform input data",
   "dependencies": {
-    "commander": "^4.1.0",
-    "inquirer": "^7.0.3"
+    "commander": "^4.1.0"
   }
 }
