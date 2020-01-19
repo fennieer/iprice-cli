@@ -31,14 +31,24 @@ In file
   node src/commands.js createCSV|c<string>   Create CSV file from string
 ```
 
-Global
+!!NOTE: If you have a space in the input value, please single/double quote the input value. 
+For example:
+```terminal
+node src/commands.js uppercase "Hello World"
+```
+
+#### Global
 ```terminal
   iprice-pfer up <string>   Change string to uppercase
   iprice-pfer alt <string>  Converts string to alternate upper and lower case
   iprice-pfer c <string>   Create CSV file from string
 ```
 
-!!NOTE: If you have a space in the input value, please single/double quote the input value.
-```terminal
-iprice-pfer uppercase "Hello World"
+To use this command above, you will have to make the package public by linking it. This creates a symlink in the global folder that links to the package. Run this command to link.
+
+```bash
+npm link
 ```
+
+You can then access this package not just in your folder. 
+
