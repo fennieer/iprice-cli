@@ -2,8 +2,14 @@
   "name": "iprice-pfer",
   "version": "1.0.0",
   "main": "src/index.js",
+  "preferGlobal": true,
+  "bin": "src/commands.js",
   "keywords": [],
   "author": "",
   "license": "Pei Fen Er",
-  "description": "A CLI tool that accepts a string"
+  "description": "A CLI tool to transform input data",
+  "dependencies": {
+    "commander": "^4.1.0",
+    "inquirer": "^7.0.3"
+  }
 }
