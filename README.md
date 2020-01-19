@@ -28,7 +28,7 @@ In file
 ```terminal
   node src/commands.js uppercase|up <string>   Change string to uppercase
   node src/commands.js alternative|alt<string>  Converts string to alternate upper and lower case
-  node src/commands.js createCSV|c<string>   Create CSV file from string
+  node src/commands.js createCSV|c<string>   Create CSV file from string - filename: myFile.csv
 ```
 
 !!NOTE: If you have a space in the input value, please single/double quote the input value. 
@@ -41,7 +41,7 @@ node src/commands.js uppercase "Hello World"
 ```terminal
   iprice-pfer up <string>   Change string to uppercase
   iprice-pfer alt <string>  Converts string to alternate upper and lower case
-  iprice-pfer c <string>   Create CSV file from string
+  iprice-pfer c <string>   Create CSV file from string - filename: myFile.csv
 ```
 
 To use this command above, you will have to make the package public by linking it. This creates a symlink in the global folder that links to the package. Run this command to link.
